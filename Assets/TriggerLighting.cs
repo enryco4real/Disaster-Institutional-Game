@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Trigger : MonoBehaviour
+public class TriggerLighting : MonoBehaviour
 {
     public GameObject lightning;
     public float velocidadelightning = 5f;

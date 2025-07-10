@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Lightning : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = -5f;
     public float destroyAfterSeconds = 5f;
 
     private bool isMoving = false;

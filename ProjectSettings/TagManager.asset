@@ -17,6 +17,7 @@ TagManager:
   - limite
   - prediosobstaculos
   - nuvemobstaculos
+  - lightining
   layers:
   - Default
   - TransparentFX
