@@ -10,7 +10,7 @@ public class FadeOutController : MonoBehaviour
 
     public void FadeAndLoadScene(string sceneName)
     {
-        Debug.Log("Iniciando fade-out para cena: " + sceneName);
+        
         StartCoroutine(FadeOut(sceneName));
     }
 
@@ -26,7 +26,7 @@ public class FadeOutController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("fadeImage não está atribuído no FadeOutController.");
+           
             SceneManager.LoadScene(sceneName);
             yield break;
         }

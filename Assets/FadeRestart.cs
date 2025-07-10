@@ -31,19 +31,27 @@ public class FadeRestart : MonoBehaviour
     }
 
     private IEnumerator FadeAndRestartScene()
+{
+    fadeImage.gameObject.SetActive(true);
+    float timer = 0f;
+
+    while (timer < fadeDuration)
     {
-        fadeImage.gameObject.SetActive(true);
-        float timer = 0f;
-
-        while (timer < fadeDuration)
-        {
-            timer += Time.deltaTime;
-            float alpha = Mathf.Clamp01(timer / fadeDuration);
-            fadeImage.color = new Color(0, 0, 0, alpha);
-            yield return null;
-        }
-
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        timer += Time.deltaTime;
+        float alpha = Mathf.Clamp01(timer / fadeDuration);
+        fadeImage.color = new Color(0, 0, 0, alpha);
+        yield return null;
     }
+
+    // Salva a pontuação da rodada antes de reiniciar
+    if (ScoreManager.instance != null)
+    {
+        ScoreManager.instance.SaveScore();  // salvar para exibir depois
+        ScoreManager.instance.ResetScore(); // zerar para nova tentativa
+    }
+
+    Scene currentScene = SceneManager.GetActiveScene();
+    SceneManager.LoadScene(currentScene.name);
+}
+
 }

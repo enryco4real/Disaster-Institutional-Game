@@ -1,33 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class cole : MonoBehaviour
+public class Cole : MonoBehaviour
 {
-    public float floatSpeed = 1f;
-    public float floatHeight = 0.25f;
+    public int score = 1; // Pontuação do item
+
+    // Variables para o movimento suave
+    public float amplitude = 0.5f; // altura do movimento
+    public float frequency = 1f; // velocidade do movimento
+
     private Vector3 startPos;
-    public int score;
-    void Start()
+
+    private void Start()
     {
         startPos = transform.position;
     }
 
-    void Update()
+    private void Update()
     {
-        float newY = startPos.y + Mathf.Sin(Time.time * floatSpeed) * floatHeight;
-        transform.position = new Vector3(startPos.x, newY, startPos.z);
-        
+        // Movimento suave de cima para baixo usando seno
+        transform.position = startPos + Vector3.up * Mathf.Sin(Time.time * frequency) * amplitude;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-{
-        if (collision.CompareTag("Player") && gameObject.CompareTag("itens"))
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            Destroy(gameObject); 
-            GameController.instance.totalscore += score;
-            GameController.instance.UpdateScoreText();
-    }
-}
+            if (ScoreManager.instance != null)
+            {
+                ScoreManager.instance.AddScore(score);
+            }
+            else
+            {
+                Debug.LogWarning("ScoreManager não encontrado!");
+            }
 
+            Destroy(gameObject);
+        }
+    }
 }

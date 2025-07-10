@@ -13,6 +13,10 @@ TagManager:
   - fireball
   - trigger
   - fireballspawnpoint
+  - firewall
+  - limite
+  - prediosobstaculos
+  - nuvemobstaculos
   layers:
   - Default
   - TransparentFX

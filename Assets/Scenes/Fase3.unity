@@ -253,11 +253,11 @@ Transform:
   m_GameObject: {fileID: 445688503}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.12285012, y: 1.015561, z: -8.190008}
+  m_LocalScale: {x: 0.8190008, y: 0.8190008, z: 0.8190008}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 795806664}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &795806659
 GameObject:
@@ -437,7 +437,8 @@ Transform:
   m_LocalPosition: {x: 0.15, y: -1.24, z: 0}
   m_LocalScale: {x: 1.221, y: 1.221, z: 1.221}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 445688506}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &795806665
@@ -1871,6 +1872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 795806664}
   speed: 3
+  blinkColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!58 &2058042307
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1946,7 +1948,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a2f80b1d0bb1824439b2b1af1759426f, type: 3}
   m_Color: {r: 0.8679245, g: 0.036845837, b: 0.036845837, a: 1}
   m_FlipX: 0
@@ -1979,5 +1981,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 23488416}
   - {fileID: 2058042309}
-  - {fileID: 445688506}
   - {fileID: 795806664}
