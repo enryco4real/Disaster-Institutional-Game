@@ -29,3 +29,5 @@ public class FadeController : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 }
+
+

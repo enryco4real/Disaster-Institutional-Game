@@ -12,7 +12,8 @@ public class Kill : MonoBehaviour
             Destroy(other.gameObject);
             PlayerStatus.playerDestroyed = true;
             FindObjectOfType<Restart>().TriggerGameOver();
-            GameController.instance.gameOver(); 
+            GameController.instance.gameOver();
+             
 
 
         }

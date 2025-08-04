@@ -18,6 +18,7 @@ TagManager:
   - prediosobstaculos
   - nuvemobstaculos
   - lightining
+  - EndTrigger
   layers:
   - Default
   - TransparentFX

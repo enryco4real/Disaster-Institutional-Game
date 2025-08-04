@@ -80,6 +80,6 @@ void Start()
     {
         // Se o valor for negativo, exibe um erro
         Debug.LogError("Tentativa de salvar uma pontuação inválida!");
+        }
     }
-}
 }

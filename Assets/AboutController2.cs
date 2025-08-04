@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoToFase2 : MonoBehaviour
+public class ReturnToMenu : MonoBehaviour
 {
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return)) 
         {
-            SceneManager.LoadScene("Fase2");
+            SceneManager.LoadScene("Menu");
         }
     }
 }
