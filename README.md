@@ -6,7 +6,7 @@
 
 ## 🌿 Contexto
 
-Em 2025, em meio ao cenário alarmante de queimadas na Amazônia, desenvolvemos o **Disaster** — um jogo runner 2D onde o jogador controla um lobo fugindo do fogo em uma floresta devastada pelo desmatamento. O projeto foi criado em sala de aula como iniciativa institucional de conscientização ambiental.
+Em 2025, em meio ao cenário alarmante de queimadas na Amazônia, desenvolvemos o **Disaster**. Um jogo runner 2D onde o jogador controla um lobo fugindo do fogo em uma floresta devastada pelo desmatamento. O projeto foi criado em sala de aula como iniciativa institucional de conscientização ambiental.
 
 ---
 
@@ -41,7 +41,7 @@ O jogador controla um lobo em um cenário de floresta em chamas. O objetivo é p
 
 - **Unity** — engine de desenvolvimento do jogo
 - **C#** — linguagem de programação da lógica do jogo
-- **ShaderLab / HLSL** — shaders para efeitos visuais (fogo, ambiente)
+- **ShaderLab / HLSL** — shaders para efeitos visuais (fogo e ambiente)
 
 ---
 
@@ -49,7 +49,7 @@ O jogador controla um lobo em um cenário de floresta em chamas. O objetivo é p
 
 ```
 Disaster-Institutional-Game/
-├── Assets/           # Sprites, scripts, cenas, áudio e animações
+├── Assets/           # Sprites, scripts, cenas e animações
 ├── Packages/         # Pacotes do Unity
 ├── ProjectSettings/  # Configurações do projeto Unity
 └── .gitignore        # Arquivos ignorados pelo Git
