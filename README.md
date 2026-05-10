@@ -6,7 +6,7 @@
 
 ## 🌿 Contexto
 
-Em 2025, em meio ao cenário alarmante de queimadas na Amazônia, desenvolvemos o **Disaster**. Um jogo runner 2D onde o jogador controla um lobo fugindo do fogo em uma floresta devastada pelo desmatamento. O projeto foi criado em sala de aula como iniciativa institucional de conscientização ambiental.
+Em 2025, em meio ao cenário alarmante de queimadas na Amazônia, desenvolvemos o **Disaster**. Um jogo runner 2D onde o jogador controla um lobo fugindo do fogo em uma floresta devastada pelo desmatamento e pelas queimadas. O projeto foi criado em sala de aula como iniciativa institucional de conscientização ambiental.
 
 ---
 
@@ -33,7 +33,7 @@ Em 2025, em meio ao cenário alarmante de queimadas na Amazônia, desenvolvemos 
 
 ## 🎮 Sobre o Jogo
 
-O jogador controla um lobo em um cenário de floresta em chamas. O objetivo é percorrer o percurso desviando dos obstáculos enquanto o fogo avança. Quanto mais **coletáveis** são pegos, maior a pontuação, ao fugir do fogo a sua história é completa. tendo uma forte mensagem sobre as consequências das queimadas para a fauna.
+O jogador controla um lobo em um cenário de floresta em chamas. O objetivo é percorrer o percurso desviando dos obstáculos enquanto o fogo avança. Quanto mais **coletáveis** são pegos, maior a pontuação que resultava em um prêmio durante a apresentação do jogo na feira. Ao fugir do fogo a sua história é completa. tendo uma forte mensagem sobre as consequências das queimadas para a fauna.
 
 ---
 
